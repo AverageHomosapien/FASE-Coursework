@@ -1,0 +1,13 @@
+
+*.TMP
+*.bak
+*.stdout
+*.ali
+*.gnat-json
+*.gz
+*.stderr
+*.xml
+*.conf
+*.spark
+*.out
+*.cswi

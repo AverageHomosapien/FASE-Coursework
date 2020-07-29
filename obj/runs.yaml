@@ -1,0 +1,499 @@
+'2020-07-29T13:20:45.708000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.ads:80:14: reserved word "reverse" cannot be used as identifier
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:20:45.708000'
+'2020-07-29T13:25:17.647000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:65:45: medium: overflow check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => Integer''First, Reactor => Online, Water =>
+    Integer''First, Speed => Integer''First, MaxSpeed => Integer''First, Carriages
+    => (others => Attatched), Carriage_No => Integer''First, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, Overheat_Temp => Integer''First))[#1]
+
+    train.ads:74:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => 159,
+    Reactor => Online, Water => 159, Speed => 160, MaxSpeed => 160, Carriages => (others
+    => Attatched), Carriage_No => 159, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating, Overheat_Temp => 159))[#0]
+
+    train.ads:82:14: medium: postcondition might fail, cannot prove locomotive.Speed
+    > -20 (e.g. when locomotive = (Rods => (others => Present), Rod_No => -19, Reactor
+    => Online, Water => -19, Speed => -20, MaxSpeed => -19, Carriages => (others =>
+    Attatched), Carriage_No => -19, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating, Overheat_Temp => -19))[#2]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:25:17.647000'
+'2020-07-29T13:28:22.018000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.ads:47:95: ";" should be ","
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:28:22.018000'
+'2020-07-29T13:32:05.047000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:66:48: medium: overflow check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => Integer''First+1, Reactor => Online, Water =>
+    Integer''First+1, Speed => Integer''First, MaxSpeed => Integer''First+1, MaxReverseSpeed
+    => Integer''First+1, Carriages => (others => Attatched), Carriage_No => Integer''First+1,
+    Temperature => 0.0, Emergency_Stopped => Running, Overheating => Overheating,
+    Overheat_Temp => Integer''First+1))[#1]
+
+    train.ads:75:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => 159,
+    Reactor => Online, Water => 159, Speed => 160, MaxSpeed => 160, MaxReverseSpeed
+    => 159, Carriages => (others => Attatched), Carriage_No => 159, Temperature =>
+    0.0, Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp =>
+    159))[#0]
+
+    train.ads:83:14: medium: postcondition might fail, cannot prove locomotive.Speed
+    > locomotive.MaxReverseSpeed (e.g. when locomotive = (Rods => (others => Present),
+    Rod_No => -1, Reactor => Online, Water => -1, Speed => -1, MaxSpeed => -1, MaxReverseSpeed
+    => 1, Carriages => (others => Attatched), Carriage_No => -1, Temperature => 0.0,
+    Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp => -1))[#2]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:32:05.047000'
+'2020-07-29T13:34:02.320000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.ads:83:14: medium: postcondition might fail, cannot prove locomotive.Speed
+    >= locomotive.MaxReverseSpeed (e.g. when locomotive = (Rods => (others => Present),
+    Rod_No => 1, Reactor => Online, Water => 1, Speed => 0, MaxSpeed => 1, MaxReverseSpeed
+    => 1, Carriages => (others => Attatched), Carriage_No => 1, Temperature => 0.0,
+    Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp => 1))[#0]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:34:02.320000'
+'2020-07-29T13:37:54.234000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:67:45: medium: overflow check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => Integer''First, Reactor => Online, Water =>
+    Integer''First, Speed => Integer''First, MaxSpeed => Integer''First, Carriages
+    => (others => Attatched), Carriage_No => Integer''First, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, Overheat_Temp => Integer''First))[#0]
+
+    train.ads:82:14: medium: postcondition might fail, cannot prove locomotive.Speed
+    >= -20 (e.g. when locomotive = (Rods => (others => Present), Rod_No => -20, Reactor
+    => Online, Water => -20, Speed => -21, MaxSpeed => -20, Carriages => (others =>
+    Attatched), Carriage_No => -20, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating, Overheat_Temp => -20))[#1]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:37:54.234000'
+'2020-07-29T13:43:46.951000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.ads:92:10: missing "=>"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:43:46.951000'
+'2020-07-29T13:44:10.991000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:1:14: missing body for "Reactor_Offline" declared at train.ads:88
+
+    train.adb:1:14: missing body for "Reactor_Online" declared at train.ads:91
+
+    train.ads:38:35: expected type "Standard.Float"
+
+    train.ads:38:35: found type universal integer
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:44:10.991000'
+'2020-07-29T13:46:04.299000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:78:24: "=" should be ":="
+
+    train.adb:83:24: "=" should be ":="
+
+    train.adb:84:04: "end Reactor_Online;" expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:46:04.299000'
+'2020-07-29T13:46:36.306000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.ads:38:35: expected type "Standard.Float"
+
+    train.ads:38:35: found type universal integer
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:46:36.306000'
+'2020-07-29T13:50:28.316000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:43:65: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => 1, Reactor => Online, Water => 1, Speed => 32,
+    MaxSpeed => ?, Carriages => (others => Attatched), Carriage_No => 0, Temperature
+    => 0.0, Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp
+    => 1))[#1]
+
+    train.adb:53:45: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => 0, Reactor => Online, Water => 0, Speed => 100,
+    MaxSpeed => 180, Carriages => (others => Attatched), Carriage_No => 0, Temperature
+    => 0.0, Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp
+    => 0))[#0]
+
+    train.adb:65:45: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => 0, Reactor => Online, Water => 0, Speed => -20,
+    MaxSpeed => ?, Carriages => (others => Attatched), Carriage_No => 0, Temperature
+    => 0.0, Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp
+    => 0))[#2]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T13:50:28.316000'
+'2020-07-29T14:42:38.752000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:43:65: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Rod_No => 1, Reactor => Online, Water => 0, Speed => 67,
+    MaxSpeed => ?, Carriages => (others => Attatched), Carriage_No => 0, Temperature
+    => 0.0, Emergency_Stopped => Running, Overheating => Overheating, Overheat_Temp
+    => 0))[#1]
+
+    train.adb:65:45: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Reactor => Online, Water => 0, Speed => -20, Carriages
+    => (others => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, Overheat_Temp => 0, others => ?))[#2]
+
+    train.ads:74:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => ?,
+    Reactor => Online, Water => 0, Speed => 160, MaxSpeed => 180, Carriages => (others
+    => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating, Overheat_Temp => 0))[#0]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T14:42:38.752000'
+'2020-07-29T14:48:42.850000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:44:42: "Overheat_Temp" is undefined
+
+    train.adb:44:42: possible misspelling of "OverheatTemp"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T14:48:42.850000'
+'2020-07-29T14:49:33.199000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:1:14: missing body for "Update_Temp" declared at train.ads:69
+
+    train.adb:44:36: "Overheat_Temp" is undefined
+
+    train.adb:44:36: possible misspelling of "OverheatTemp"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T14:49:33.199000'
+'2020-07-29T14:53:05.082000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:46:10: medium: precondition might fail, cannot prove locomotive.Speed
+    > 0 (e.g. when locomotive = (Rods => (others => Present), Rod_No => 1, Reactor
+    => Online, Water => 0, Speed => -1, MaxSpeed => ?, Carriages => (others => Attatched),
+    Carriage_No => 0, Temperature => 1.5000000E+0, Emergency_Stopped => Stopped, Overheating
+    => Overheating))[#0]
+
+    train.adb:65:45: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Reactor => Online, Water => 0, Speed => -20, Carriages
+    => (others => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, others => ?))[#2]
+
+    train.ads:74:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => ?,
+    Reactor => Online, Water => 0, Speed => 160, MaxSpeed => 180, Carriages => (others
+    => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating))[#1]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T14:53:05.082000'
+'2020-07-29T15:44:26.161000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:71:26: "=" should be ":="
+
+    train.adb:121:04: "end Carriage_Rem;" expected
+
+    train.adb:133:04: "end Carriage_Add;" expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T15:44:26.161000'
+'2020-07-29T15:44:59.369000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:88:04: duplicate body for "Rod_Out" declared at train.ads:52
+
+    train.adb:88:14: "Rod_Out" conflicts with declaration at train.ads:52
+
+    train.adb:100:04: duplicate body for "Rod_In" declared at train.ads:56
+
+    train.adb:100:14: "Rod_In" conflicts with declaration at train.ads:56
+
+    train.adb:117:26: expected type "Rod_Rng" defined at train.ads:6
+
+    train.adb:117:26: found type "Carriage_Rng" defined at train.ads:11
+
+    train.adb:117:51: expected type "Rod_Rng" defined at train.ads:6
+
+    train.adb:117:51: found type "Carriage_Rng" defined at train.ads:11
+
+    train.adb:131:59: expected type "carriage" defined at train.ads:10
+
+    train.adb:131:59: found type "rod" defined at train.ads:5
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T15:44:59.369000'
+'2020-07-29T15:46:43.242000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:96:48: expected type "rod" defined at train.ads:5
+
+    train.adb:96:48: found type "carriage" defined at train.ads:10
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T15:46:43.242000'
+'2020-07-29T15:47:40.604000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    train.adb:96:43: expected type "Carriage_Rng" defined at train.ads:11
+
+    train.adb:96:43: found type "Rod_Rng" defined at train.ads:6
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T15:47:40.604000'
+'2020-07-29T15:52:29.699000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:45:10: medium: precondition might fail, cannot prove locomotive.Speed
+    > 0 (e.g. when locomotive = (Rods => (others => Present), Rod_No => 1, Reactor
+    => Online, Water => 0, Speed => -1, MaxSpeed => ?, Carriages => (others => Attatched),
+    Carriage_No => 0, Temperature => 1.5000000E+0, Emergency_Stopped => Stopped, Overheating
+    => Overheating))[#0]
+
+    train.adb:63:45: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Reactor => Online, Water => 0, Speed => -20, Carriages
+    => (others => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, others => ?))[#2]
+
+    train.adb:97:56: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Reactor => Online, Water => 0, Speed => 0, Carriages =>
+    (others => Unattatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, others => ?))[#3]
+
+    train.adb:109:56: medium: range check might fail (e.g. when locomotive = (Rods
+    => (others => Present), Reactor => Online, Water => 0, Speed => 0, Carriages =>
+    (others => Attatched), Carriage_No => 5, Temperature => 0.0, Emergency_Stopped
+    => Running, Overheating => Overheating, others => ?))[#5]
+
+    train.ads:74:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => ?,
+    Reactor => Online, Water => 0, Speed => 160, MaxSpeed => 180, Carriages => (others
+    => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating))[#1]
+
+    train.ads:98:39: medium: postcondition might fail, cannot prove locomotive.Carriage_No
+    = locomotive.Carriage_No - 1 (e.g. when locomotive = (Rods => (others => Present),
+    Reactor => Online, Water => 0, Speed => 0, Carriages => (0 => Attatched, 1 =>
+    Attatched, 2 => Attatched, 3 => Attatched, others => Unattatched), Carriage_No
+    => 0, Temperature => 0.0, Emergency_Stopped => Running, Overheating => Overheating,
+    others => ?))[#4]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T15:52:29.699000'
+'2020-07-29T16:07:11.420000':
+  category: GNATprove
+  files:
+  - E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    train.adb:45:10: medium: precondition might fail, cannot prove locomotive.Reactor
+    = Offline (e.g. when locomotive = (Rods => (others => Present), Rod_No => 1, Reactor
+    => Online, Water => 0, Speed => 1, MaxSpeed => ?, Carriages => (others => Attatched),
+    Carriage_No => 0, Temperature => 1.5000000E+0, Emergency_Stopped => Stopped, Overheating
+    => Overheating))[#1]
+
+    train.ads:74:57: medium: postcondition might fail, cannot prove locomotive.Speed
+    < SpeedLimit (e.g. when locomotive = (Rods => (others => Present), Rod_No => ?,
+    Reactor => Online, Water => 0, Speed => 160, MaxSpeed => 160, Carriages => (others
+    => Attatched), Carriage_No => 0, Temperature => 0.0, Emergency_Stopped => Running,
+    Overheating => Overheating))[#0]
+
+    train.ads:98:39: medium: postcondition might fail, cannot prove locomotive.Carriage_No
+    = locomotive.Carriage_No - 1 (e.g. when locomotive = (Rods => (others => Present),
+    Reactor => Online, Water => 0, Speed => 0, Carriages => (0 => Attatched, 1 =>
+    Attatched, 2 => Attatched, 3 => Attatched, others => Unattatched), Carriage_No
+    => 0, Temperature => 0.0, Emergency_Stopped => Running, Overheating => Overheating,
+    others => ?))[#2]
+
+    Summary logged in E:\Coding\Non-Github\ADA\Coursework\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-07-29T16:07:11.420000'
