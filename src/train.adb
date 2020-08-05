@@ -38,14 +38,57 @@ package body train with SPARK_Mode is
    end Water_Rem;
 
    procedure Update_Temp (locomotive : in out Trains; OverheatTemp : in Float) is
+      temp : Float;
    begin
-      locomotive.Temperature := abs (Float(locomotive.Speed) * 3.0) / (Float(locomotive.Rod_No) + 1.0);
-      if (locomotive.Temperature > OverheatTemp and locomotive.Speed > 0) then
+      temp := (locomotive.Electricity / 2.0) + (2500.0 / (Float(locomotive.Water) + 1.0));
+      if (temp >= OverheatTemp) then
          locomotive.Emergency_Stopped := Stopped;
-         locomotive.Reactor := Offline;
          Emergency_Stop(locomotive => locomotive);
+         locomotive.Temperature := 20.0;
+      elsif (temp < 5.0) then
+         locomotive.Temperature := 5.0;
+      else
+        locomotive.Temperature := temp;
       end if;
    end Update_Temp;
+
+   procedure Update_Current_Electricity (locomotive : in out Trains) is
+      temp : Float;
+   begin
+
+      temp := Float((locomotive.Speed - 50) * (locomotive.Carriage_No + 4)) / 4.0;
+      if (locomotive.Speed > 50) then
+         if (temp > locomotive.MaxElectricity) then
+            locomotive.Electricity := locomotive.MaxElectricity;
+         end if;
+      elsif (temp < 20.0) then
+         locomotive.Electricity := 20.0;
+      else
+         locomotive.Electricity := Float(50 * (locomotive.Carriage_No + 4)) / 4.0;
+      end if;
+   end Update_Current_Electricity;
+
+   procedure Update_Max_Electricity (locomotive : in out Trains) is
+   begin
+      locomotive.MaxElectricity := 1200.0 / Float(locomotive.Rod_No + 4);
+   end Update_Max_Electricity;
+
+   procedure Update_Max_Speed (locomotive : in out Trains) is
+   begin
+      locomotive.MaxSpeed := ((Integer(locomotive.MaxElectricity) * 4) / (locomotive.Carriage_No + 4)) + 50;
+   end Update_Max_Speed;
+
+
+
+   procedure Reactor_Offline (locomotive : in out Trains) is
+   begin
+      locomotive.Reactor := Offline;
+   end Reactor_Offline;
+
+   procedure Reactor_Online (locomotive : in out Trains) is
+   begin
+      locomotive.Reactor := Online;
+   end Reactor_Online;
 
 
 
@@ -59,11 +102,6 @@ package body train with SPARK_Mode is
       locomotive.Speed := (locomotive.Speed -1);
    end Brake;
 
-   procedure Backward_Accelerate (locomotive : in out Trains) is
-   begin
-      locomotive.Speed := (locomotive.Speed -1); --
-   end Backward_Accelerate;
-
    procedure Emergency_Stop (locomotive : in out Trains) is
    begin
       locomotive.Reactor := Offline;
@@ -71,18 +109,6 @@ package body train with SPARK_Mode is
          locomotive.Speed := locomotive.Speed -1;
       end loop;
    end Emergency_Stop;
-
-
-
-   procedure Reactor_Offline (locomotive : in out Trains) is
-   begin
-      locomotive.Reactor := Offline;
-   end Reactor_Offline;
-
-   procedure Reactor_Online (locomotive : in out Trains) is
-   begin
-      locomotive.Reactor := Online;
-   end Reactor_Online;
 
 
 
